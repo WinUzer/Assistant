@@ -81,7 +81,6 @@ def open_application(command, applications):
             return False
     return False  # Command not found in the applications file
 
-
 def load_json_files():
     with open('responses.json') as f:
         responses = json.load(f)
@@ -234,9 +233,6 @@ def some_function():
 # Ensure the GUI is started when the program runs
 if __name__ == "__main__":
     run_gui()  # Call the function that runs the GUI from main_gui.py
-
-
-
 
 def cal_day():
     day = datetime.datetime.today().weekday() + 1
@@ -487,7 +483,6 @@ gif_running = False
 gif_image_id = None
 current_frame = 0
 
-
 def run_gui():
     # Your existing Tkinter code that sets up the GUI
     root = tk.Tk()
@@ -499,7 +494,6 @@ def run_gui():
     start_button.pack()
 
     root.mainloop()
-
 
 def start_function():
     print("Start button clicked!")
@@ -636,7 +630,6 @@ class TransparentButton:
         self.current_tk_image = ImageTk.PhotoImage(resized_pil_image)
         if self.canvas.winfo_exists():
             self.canvas.itemconfig(self.image_id, image=self.current_tk_image)
-
 
 # Function to handle dragging the window
 def make_window_draggable(root):
